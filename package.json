@@ -1,0 +1,69 @@
+{
+  "name": "cptools",
+  "displayName": "CP Tools",
+  "description": "Improve Coding Efficency of CP Community",
+  "version": "1.0.0",
+  "engines": {
+    "vscode": "^1.49.0"
+  },
+  "publisher": "VinothKrishanKathiresan",
+  "author": {
+    "name": "Vinoth Krishan Kathiresan"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/drKrishan/cp-snip"
+  },
+  "icon": "icon.png",
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "*"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "cp-tools.cpCom",
+        "title": "CP-Create Component"
+      },
+      {
+        "command": "cp-tools.cpState",
+        "title": "CP-Create Context API files"
+      },
+      {
+        "command": "cp-tools.cpFire",
+        "title": "CP-Create Firebase files"
+      },
+      {
+        "command": "cp-tools.cpInit",
+        "title": "CP-Initialize Project"
+      },
+      {
+        "command": "cp-tools.cpChange",
+        "title": "CP-Change Directry"
+      },
+      {
+        "command": "cp-tools.cpAxios",
+        "title": "CP-Create Axios Files"
+      }
+    ]
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "node ./test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.49.0",
+    "@types/glob": "^7.1.3",
+    "@types/mocha": "^8.0.0",
+    "@types/node": "^14.0.27",
+    "eslint": "^7.9.0",
+    "glob": "^7.1.6",
+    "mocha": "^8.1.3",
+    "typescript": "^4.0.2",
+    "vscode-test": "^1.4.0"
+  }
+}
